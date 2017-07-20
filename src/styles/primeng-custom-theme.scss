@@ -1,11 +1,13 @@
-// Predefined PrimeNG Omega Sass variables
+// Import predefined PrimeNG Omega Sass variables
 @import 'primeng-variables';
 
 
-// Vendor files (imported from node_modules)
-@import '~primeng/resources/themes/theme';           // <--- The path is found thanks to "~"
-// @import '~primeng/resources/themes/omega/theme';  // ... or whatever theme you prefer
+// Import Vendor files (imported from node_modules)
+@import '~primeng/resources/themes/theme';            // <--- The path is found thanks to "~"
+// @import "~primeng/resources/themes/bootstrap/theme";  // <--- ...or whatever theme you prefer
+// @import '~primeng/resources/themes/omega/theme';
 @import '~primeng/resources/primeng.min.css';
+// @import "~font-awesome/css/font-awesome.min.css";
 
 
 // Your custom style rules

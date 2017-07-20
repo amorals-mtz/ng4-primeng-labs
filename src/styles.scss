@@ -1,17 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Here you define the palettes for your themes.
+// ...
+
+// Include the common styles for PrimeNG components.
 @import './styles/primeng-custom-theme.scss';
-@import './styles/main.scss';
-
-
-// Vendor files (imported from node_modules)
-// @import "~primeng/resources/themes/bootstrap/theme.css";
-// @import "~primeng/resources/primeng.min.css";
-// @import "~font-awesome/css/font-awesome.min.css";
 
 // Base project stuff (common settings)
 // @import "global";
+@import './styles/main.scss';
 
-// Specific styles for components
+// Include specific styles for core and each component used in the app.
+// Alternatively, you can import and @include the theme mixins
+// for each component that you are using.
 // @import "../../app/app.component";
-// @import "../../app/section/section.component";
+// @import "../../app/shared/section.component";
