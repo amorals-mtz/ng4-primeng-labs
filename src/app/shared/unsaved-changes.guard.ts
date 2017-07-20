@@ -1,3 +1,8 @@
+// The ConfirmDeactivateGuard is used to prevent our users from losing unsaved changes
+// when filling out a form and accidently clicking on a button to cancel the process.
+// v1.0
+// Created by amorales on 20/07/17.
+
 import { Injectable } from '@angular/core';
 import { CanDeactivate, Router } from '@angular/router';
 
@@ -14,6 +19,18 @@ export class UnsavedChangesGuard implements CanDeactivate<FirstViewComponent> {
   constructor(private confirmationService: ConfirmationService) { }
 
   canDeactivate(component: FirstViewComponent) {
+
+    // checking if changes were made
+    /*
+    if (target.hasChanges()) {
+      // The `hasChanges()` nethod returns a boolean value indicating
+      // if the components has detected any changes. This can be done
+      // by checking the dirty state of the form, keeping track
+      // of the previous model and compare it with the current one.
+      return window.confirm('Do you really want to cancel?');
+    }
+    */
+
     // allow navigation if the form is unchanged
     if (!component.dirty) {
       return true;
