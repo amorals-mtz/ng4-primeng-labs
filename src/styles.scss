@@ -2,13 +2,15 @@
 
 // Here you define the palettes for your themes.
 // ...
+// Variable to point to your Font directory.
+//$fa-font-path: "~font-awesome/fonts";
+// ...
 
 // Include the common styles for PrimeNG components.
 @import './styles/primeng-custom-theme.scss';
 
 // Base project stuff (common settings)
-// @import "global";
-@import './styles/main.scss';
+@import './styles/main.scss'; // @import "global";
 
 // Include specific styles for core and each component used in the app.
 // Alternatively, you can import and @include the theme mixins
